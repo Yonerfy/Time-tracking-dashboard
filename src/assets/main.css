@@ -1,5 +1,9 @@
-@import './base.css';
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import 'tailwindcss';
 
+body {
+  font-family: 'Rubik', sans-serif;
+}
 #app {
   max-width: 1280px;
   margin: 0 auto;
@@ -7,29 +11,90 @@
   font-weight: normal;
 }
 
-a,
-.green {
-  text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
-  transition: 0.4s;
-  padding: 3px;
+/* color */
+
+.navy-950 {
+  background-color: #0e1323;
+}
+.navy-900 {
+  background-color: #1c204b;
+}
+.navy-800 {
+  background-color: #33397a;
+}
+.navy-200 {
+  background-color: #bbc0ff;
 }
 
-@media (hover: hover) {
-  a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
-  }
+.orange-300 {
+  background-color: #ff8b64;
+}
+.purble-700 {
+  background-color: #7335d2;
+}
+.purble-600 {
+  background-color: #5747ea;
+}
+.purble-500 {
+  background-color: #7078c9;
+}
+.blue-300 {
+  background-color: #55c2e6;
+}
+.pink-400 {
+  background-color: #ff5e7d;
+}
+.green-400 {
+  background-color: #4bcf82;
+}
+.yellow-300 {
+  background-color: #f1c75b;
+}
+.grey-200 {
+  background-color: #d8d8d8;
 }
 
-@media (min-width: 1024px) {
-  body {
-    display: flex;
-    place-items: center;
-  }
+/* typeography */
 
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
-  }
+.text-preset-1 {
+  font-size: 3.5rem;
+  line-height: 4.125rem;
+  font-weight: light;
+  letter-spacing: 0;
+}
+.text-preset-2 {
+  font-size: 2.4rem;
+  line-height: 2.938rem;
+  font-weight: light;
+  letter-spacing: 0;
+}
+.text-preset-3 {
+  font-size: 2.25rem;
+  line-height: 2.375rem;
+  font-weight: light;
+  letter-spacing: 0;
+}
+.text-preset-4 {
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+  font-weight: light;
+  letter-spacing: 0;
+}
+.text-preset-5-regular {
+  font-size: 1.25rem;
+  line-height: 1.313rem;
+  font-weight: regular;
+  letter-spacing: 0;
+}
+.text-preset-5-medium {
+  font-size: 1.25rem;
+  line-height: 1.313rem;
+  font-weight: medium;
+  letter-spacing: 0;
+}
+.text-preset-6 {
+  font-size: 0.938rem;
+  line-height: 1.125rem;
+  font-weight: regular;
+  letter-spacing: 0;
 }
