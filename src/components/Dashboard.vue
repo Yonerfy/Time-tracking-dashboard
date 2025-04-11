@@ -14,7 +14,6 @@ const user = ref({
 
 <template>
   <div class="dashboard">
-    <h1>Dashboard</h1>
     <div class="dashboard-container">
       <UserCard :user="user" />
 

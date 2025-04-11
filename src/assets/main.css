@@ -3,55 +3,99 @@
 
 body {
   font-family: 'Rubik', sans-serif;
+  background-color: #0e1323;
 }
 #app {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   font-weight: normal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 }
 
 /* color */
 
-.navy-950 {
+.navy-950-bg {
   background-color: #0e1323;
 }
-.navy-900 {
+.navy-950 {
+  color: #0e1323;
+}
+.navy-900-bg {
   background-color: #1c204b;
 }
-.navy-800 {
+.navy-900 {
+  color: #1c204b;
+}
+.navy-800-bg {
   background-color: #33397a;
 }
-.navy-200 {
+.navy-800 {
+  color: #33397a;
+}
+.navy-200-bg {
   background-color: #bbc0ff;
 }
+.navy-200 {
+  color: #bbc0ff;
+}
 
-.orange-300 {
+.orange-300-bg {
   background-color: #ff8b64;
 }
-.purble-700 {
+.orange-300 {
+  color: #ff8b64;
+}
+.purble-700-bg {
   background-color: #7335d2;
 }
-.purble-600 {
+.purble-700 {
+  color: #7335d2;
+}
+.purble-600-bg {
   background-color: #5747ea;
 }
-.purble-500 {
+.purble-600 {
+  color: #5747ea;
+}
+.purble-500-bg {
   background-color: #7078c9;
 }
-.blue-300 {
+.purble-500 {
+  color: #7078c9;
+}
+.blue-300-bg {
   background-color: #55c2e6;
 }
-.pink-400 {
+.blue-300 {
+  color: #55c2e6;
+}
+.pink-400-bg {
   background-color: #ff5e7d;
 }
-.green-400 {
+.pink-400 {
+  color: #ff5e7d;
+}
+.green-400-bg {
   background-color: #4bcf82;
 }
-.yellow-300 {
+.green-400 {
+  color: #4bcf82;
+}
+.yellow-300-bg {
   background-color: #f1c75b;
 }
-.grey-200 {
+.yellow-300 {
+  color: #f1c75b;
+}
+.grey-200-bg {
   background-color: #d8d8d8;
+}
+.grey-200 {
+  color: #d8d8d8;
 }
 
 /* typeography */
@@ -59,25 +103,25 @@ body {
 .text-preset-1 {
   font-size: 3.5rem;
   line-height: 4.125rem;
-  font-weight: light;
+  font-weight: lighter;
   letter-spacing: 0;
 }
 .text-preset-2 {
   font-size: 2.4rem;
   line-height: 2.938rem;
-  font-weight: light;
+  font-weight: lighter;
   letter-spacing: 0;
 }
 .text-preset-3 {
   font-size: 2.25rem;
   line-height: 2.375rem;
-  font-weight: light;
+  font-weight: lighter;
   letter-spacing: 0;
 }
 .text-preset-4 {
   font-size: 1.5rem;
   line-height: 1.75rem;
-  font-weight: light;
+  font-weight: lighter;
   letter-spacing: 0;
 }
 .text-preset-5-regular {
