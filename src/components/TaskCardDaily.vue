@@ -1,10 +1,10 @@
 <script setup>
-import { defineProps } from 'vue'
 import ButtonCard from '@/components/ButtonCard.vue'
 
 defineProps({
   task: {
     title: String,
+    className: String,
     hour: String,
     lastWeek: String,
     image: String,
@@ -17,7 +17,8 @@ defineProps({
   <div class="task-card-container rounded-xl" :class="task.title">
     <div
       class="imgTopCard flex justify-end rounded-t-xl z-10 relative lg:max-h-[3.825em] md:max-h-[2.825em]"
-      :style="{ backgroundColor: task.bagroundColor, backgroundImage: `url(${task.image})` }"
+      :class="task.className"
+      :style="{ backgroundColor: task.bagroundColor }"
     ></div>
     <div class="cardHover navy-900-bg rounded-xl py-8 px-4 mt-[-.5em] z-20 relative">
       <div class="task-card p-3 rounded-t-xl">

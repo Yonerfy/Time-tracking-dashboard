@@ -147,6 +147,29 @@ body {
   cursor: pointer;
 }
 
+.work {
+  background-image: url('/icon-work.svg');
+}
+
+.play {
+  background-image: url('/icon-play.svg');
+}
+.study {
+  background-image: url('/icon-study.svg');
+}
+.exercise {
+  background-image: url('/icon-exercise.svg');
+}
+.social {
+  background-image: url('/icon-social.svg');
+}
+.self-care {
+  background-image: url('/icon-self-care.svg');
+}
+.social-media {
+  background-image: url('/icon-ellipsis.svg');
+}
+
 @media (max-width: 768px) {
   #app {
     display: block;

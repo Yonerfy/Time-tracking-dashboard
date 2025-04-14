@@ -30,28 +30,28 @@ const active = ref('daily')
   grid-template-rows: repeat(2, 1fr);
   gap: 2rem;
   grid-template-areas:
-    'User Work Play Study'
-    'User Exercise Social Self-Care';
+    'user work play study'
+    'user exercise social self-Care';
   .User {
-    grid-area: User;
+    grid-area: user;
   }
   .Work {
-    grid-area: Work;
+    grid-area: work;
   }
   .Play {
-    grid-area: Play;
+    grid-area: play;
   }
   .Study {
-    grid-area: Study;
+    grid-area: study;
   }
   .Exercise {
-    grid-area: Exercise;
+    grid-area: exercise;
   }
   .Social {
-    grid-area: Social;
+    grid-area: social;
   }
   .Self-Care {
-    grid-area: Self-Care;
+    grid-area: self-Care;
   }
 }
 
@@ -61,9 +61,9 @@ const active = ref('daily')
     grid-template-rows: repeat(4, auto);
     gap: 2rem;
     grid-template-areas:
-      'User User User'
-      'Work Play Study'
-      'Exercise Social Self-Care';
+      'user user user'
+      'work play study'
+      'exercise social self-Care';
   }
 }
 @media (max-width: 426px) {
@@ -72,13 +72,13 @@ const active = ref('daily')
     grid-template-rows: repeat(4, auto);
     gap: 2rem;
     grid-template-areas:
-      'User'
-      'Work'
-      'Play'
-      'Study'
-      'Exercise'
-      'Social'
-      'Self-Care';
+      'user'
+      'work'
+      'play'
+      'study'
+      'exercise'
+      'social'
+      'self-Care';
   }
 }
 </style>
