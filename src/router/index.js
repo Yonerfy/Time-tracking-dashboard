@@ -21,6 +21,10 @@ const router = createRouter({
       name: 'monthly',
       component: MonthlyView,
     },
+    {
+      path: '/:pathMatch(.*)*',
+      redirect: '/',
+    },
   ],
 })
 
