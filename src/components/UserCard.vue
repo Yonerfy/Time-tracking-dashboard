@@ -22,7 +22,7 @@ defineProps({
     >
       <div class="img-container lg:mb-[2.3em]">
         <img
-          src="../assets/images/image-jeremy.png"
+          src="../../public/images/image-jeremy.png"
           alt="User Image"
           class="rounded-full w-[4.665em] h-[4.665em] border-3 border-white"
         />
