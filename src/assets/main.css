@@ -142,6 +142,10 @@ body {
   font-weight: regular;
   letter-spacing: 0;
 }
+.cardHover:hover {
+  background-color: #33397a;
+  cursor: pointer;
+}
 
 @media (max-width: 768px) {
   #app {

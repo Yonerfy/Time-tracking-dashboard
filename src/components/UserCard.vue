@@ -9,6 +9,10 @@ defineProps({
     monthly: String,
     required: true,
   },
+  active: {
+    type: String,
+    default: 'daily',
+  },
 })
 </script>
 <template>
@@ -31,15 +35,24 @@ defineProps({
     <div
       class="navy-900-bg rounded-b-xl p-[2em] mt-[-1em] flex lg:flex-col lg:items-start items-center md:items-center md:justify-around justify-between z-10 relative"
     >
-      <RouterLink to="/" class="report-time text-preset-5-regular purble-500 my-[1.313em]">
+      <RouterLink
+        to="/"
+        class="report-time text-preset-5-regular purble-500 my-[1.313em]"
+        active-class="daily"
+      >
         {{ user.daily }}
       </RouterLink>
-      <RouterLink to="/weekly" class="report-time text-preset-5-regular purble-500 lg:mb-[1.313em]">
+      <RouterLink
+        to="/weekly"
+        class="report-time text-preset-5-regular purble-500 lg:mb-[1.313em]"
+        active-class="weekly"
+      >
         {{ user.weekly }}
       </RouterLink>
       <RouterLink
         to="/monthly"
         class="report-time text-preset-5-regular purble-500 lg:mb-[1.313em]"
+        active-class="monthly"
       >
         {{ user.monthly }}
       </RouterLink>
@@ -50,5 +63,10 @@ defineProps({
 a.report-time:hover {
   color: white;
   cursor: pointer;
+}
+.daily,
+.weekly,
+.monthly {
+  color: white !important;
 }
 </style>

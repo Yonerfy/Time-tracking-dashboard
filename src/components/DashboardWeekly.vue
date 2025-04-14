@@ -10,12 +10,13 @@ const user = ref({
   weekly: 'Weekly',
   monthly: 'Monthly',
 })
+const active = ref('weekly')
 </script>
 
 <template>
   <div class="dashboard">
     <div class="dashboard-container md:pb-[2em] pb-[2em]">
-      <UserCard :user="user" />
+      <UserCard :user="user" :active="active" />
 
       <TaskCardWeekly v-for="(task, index) in tasks" :key="index" :task="task" />
     </div>
