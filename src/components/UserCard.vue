@@ -1,6 +1,6 @@
 <script setup>
-import { defineProps } from 'vue'
 import { RouterLink } from 'vue-router'
+import jeremie from '../images/image-jeremy.png'
 defineProps({
   user: {
     name: String,
@@ -22,7 +22,7 @@ defineProps({
     >
       <div class="img-container lg:mb-[2.3em]">
         <img
-          src="../../public/images/image-jeremy.png"
+          :src="jeremie"
           alt="User Image"
           class="rounded-full w-[4.665em] h-[4.665em] border-3 border-white"
         />

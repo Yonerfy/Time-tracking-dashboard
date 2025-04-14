@@ -1,5 +1,5 @@
 <script setup>
-import btnImg from '../../public/images/icon-ellipsis.svg'
+import btnImg from '../images/icon-ellipsis.svg'
 </script>
 <template>
   <button class="btn flex justify-between items-center w-[100%] p-4 ps-0 navy-900 text-white">
