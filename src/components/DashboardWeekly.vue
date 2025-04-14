@@ -1,6 +1,6 @@
 <script setup>
 import UserCard from '@/components/UserCard.vue'
-import TaskCardDaily from '@/components/TaskCardDaily.vue'
+import TaskCardWeekly from '@/components/TaskCardWeekly.vue'
 import data from '@/assets/data.json'
 import { ref } from 'vue'
 const tasks = ref(data)
@@ -17,7 +17,7 @@ const user = ref({
     <div class="dashboard-container md:pb-[2em] pb-[2em]">
       <UserCard :user="user" />
 
-      <TaskCardDaily v-for="(task, index) in tasks" :key="index" :task="task" />
+      <TaskCardWeekly v-for="(task, index) in tasks" :key="index" :task="task" />
     </div>
   </div>
 </template>

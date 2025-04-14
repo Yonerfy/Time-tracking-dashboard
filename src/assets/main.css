@@ -142,3 +142,22 @@ body {
   font-weight: regular;
   letter-spacing: 0;
 }
+
+@media (max-width: 768px) {
+  #app {
+    display: block;
+  }
+}
+@media (max-width: 426px) {
+  .text-preset-2 {
+    font-size: 1.5rem;
+    line-height: initial;
+  }
+  .text-preset-5-regular {
+    font-size: 1rem;
+  }
+  .text-preset-1 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+}
